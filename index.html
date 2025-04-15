@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,11 +7,19 @@
   <style>
     body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; color: #333; }
     header, footer { background: #2c3e50; color: white; padding: 1rem; text-align: center; }
-    nav { background: #2980b9; color: white; padding: 0.5rem; text-align: center; }
-    nav a { color: white; margin: 0 1rem; text-decoration: none; }
+    nav { background: #2980b9; color: white; text-align: center; }
+    nav a {
+      color: white;
+      display: inline-block;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #1f6391;
+    }
     .container { padding: 2rem; background: white; max-width: 800px; margin: auto; }
     h2 { border-bottom: 2px solid #2980b9; padding-bottom: 0.5rem; }
-    img { max-width: 100%; height: auto; }
+    img { max-width: 100%; height: auto; margin-bottom: 1rem; }
     .button {
       display: inline-block;
       background-color: #2980b9;
@@ -21,6 +28,13 @@
       margin-top: 1rem;
       text-decoration: none;
       border-radius: 5px;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0;
+        border-top: 1px solid rgba(255,255,255,0.2);
+      }
     }
   </style>
 </head>
@@ -40,7 +54,7 @@
     <section id="home">
       <h2>駐車場のご案内</h2>
       <p>林パーキングは静岡県伊豆の国市四日町283-10に位置する、月額4,000円（税込）でご利用いただける契約制駐車場です。通勤・通学・観光の拠点に便利な立地で、現在空き区画もございます。</p>
-      <p>全44台中、まだ空きがあります。</p>
+      <p>全44台中、約20台が契約済みです。</p>
     </section>
 
     <section id="info">
@@ -49,7 +63,6 @@
         <li>月額料金：4,000円（税込）</li>
         <li>初期費用：なし（敷金・礼金不要）</li>
         <li>契約期間：1か月～（短期可）</li>
-        <li>空き区画数：24台</li>
       </ul>
       <a class="button" href="https://forms.gle/gLFf42piT8Wy2LFa7" target="_blank">▶ お申し込みはこちら（Googleフォーム）</a>
     </section>
@@ -57,7 +70,8 @@
     <section id="access">
       <h2>アクセス</h2>
       <p>住所：静岡県伊豆の国市四日町283-10</p>
-      <iframe src="https://www.google.com/maps?q=静岡県伊豆の国市四日町283-10&output=embed" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      <p>※Googleマップ上で正しい位置が表示されない場合は、<a href="https://www.google.com/maps/place/34.972890,138.938345" target="_blank">こちらのリンク</a>をご利用ください。</p>
+      <iframe src="https://maps.google.com/maps?q=34.972890,138.938345&z=17&output=embed" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
       <p>伊豆箱根鉄道「韮山駅」から徒歩10分です。</p>
     </section>
 
